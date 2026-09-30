@@ -681,6 +681,22 @@ footer{
 }
 @media(prefers-reduced-motion:reduce){.orb1,.orb2,.orb3{animation:none}}
 </style>
+<style id="hero-italic-overhang-fix">
+.hero h1{
+ width:max-content;
+ max-width:calc(100% - .6rem);
+ padding-right:.6rem;
+ overflow:visible;
+}
+.hero h1 i{
+ display:inline-block;
+ padding-right:.12em;
+ margin-right:-.12em;
+}
+@media(max-width:37.5rem){
+ .hero h1{max-width:calc(100% - .45rem);padding-right:.45rem}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
