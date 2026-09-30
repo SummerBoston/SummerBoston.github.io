@@ -654,6 +654,33 @@ footer{
  .footer-focus{max-width:19rem}
 }
 </style>
+<style id="orb-motion-smoothing">
+.orb1{animation:orbFloatOneSmooth 28s ease-in-out infinite alternate}
+.orb2{animation:orbFloatTwoSmooth 34s ease-in-out infinite alternate-reverse}
+.orb3{animation:orbFloatThreeSmooth 24s ease-in-out infinite alternate}
+@keyframes orbFloatOneSmooth{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 30%{transform:translate3d(-3.2vw,2.6vh,0) rotate(3deg) scale(1.02)}
+ 62%{transform:translate3d(-5.2vw,6.8vh,0) rotate(-2deg) scale(.99)}
+ 82%{transform:translate3d(-1.4vw,5.2vh,0) rotate(-4deg) scale(1.035)}
+ 100%{transform:translate3d(.6vw,-1.2vh,0) rotate(1deg) scale(.99)}
+}
+@keyframes orbFloatTwoSmooth{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 28%{transform:translate3d(-3.8vw,-3.2vh,0) rotate(-3deg) scale(.98)}
+ 58%{transform:translate3d(-7vw,-8.2vh,0) rotate(3deg) scale(1.025)}
+ 80%{transform:translate3d(-3.2vw,-6vh,0) rotate(5deg) scale(1)}
+ 100%{transform:translate3d(-.7vw,1.4vh,0) rotate(-2deg) scale(1.03)}
+}
+@keyframes orbFloatThreeSmooth{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 32%{transform:translate3d(4.6vw,3.8vh,0) rotate(5deg) scale(.96)}
+ 60%{transform:translate3d(9.8vw,5.8vh,0) rotate(8deg) scale(1.055)}
+ 82%{transform:translate3d(6vw,-3.6vh,0) rotate(-5deg) scale(.98)}
+ 100%{transform:translate3d(-.8vw,-1vh,0) rotate(2deg) scale(1.02)}
+}
+@media(prefers-reduced-motion:reduce){.orb1,.orb2,.orb3{animation:none}}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
