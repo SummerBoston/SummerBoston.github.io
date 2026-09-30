@@ -436,6 +436,61 @@ footer span,footer b{font-size:1rem}
  .orb1,.orb2{animation:none}
 }
 </style>
+<style id="minimal-header-balance">
+.home-mark{
+ width:2.5rem;
+ height:2.5rem;
+ flex-basis:2.5rem;
+ border:.0625rem solid rgba(21,18,36,.18);
+ border-radius:.7rem;
+ background:rgba(255,255,255,.5);
+ box-shadow:none;
+ backdrop-filter:blur(.5rem);
+}
+.home-mark:hover{
+ transform:translateY(-.08rem);
+ background:rgba(255,255,255,.8);
+ box-shadow:none;
+}
+.home-roof,.home-body{background:#151224}
+.home-door{background:#fff}
+.contact-pill{
+ min-height:auto;
+ padding:.55rem .15rem;
+ border:0;
+ border-radius:0;
+ background:transparent;
+ color:#151224;
+ box-shadow:none;
+ font-weight:500;
+ line-height:1.2;
+ position:relative;
+}
+.contact-pill::after{
+ content:"";
+ position:absolute;
+ left:.15rem;
+ right:.15rem;
+ bottom:.25rem;
+ height:.0625rem;
+ background:#151224;
+ transform:scaleX(0);
+ transform-origin:right;
+ transition:transform .22s ease;
+}
+.contact-pill:hover{
+ transform:none;
+ background:transparent;
+ box-shadow:none;
+ filter:none;
+}
+.contact-pill:hover::after{transform:scaleX(1);transform-origin:left}
+.contact-pill:focus-visible{outline:.125rem solid #151224;outline-offset:.25rem}
+@media(max-width:37.5rem){
+ .home-mark{width:2.35rem;height:2.35rem;flex-basis:2.35rem}
+ .contact-pill{padding:.5rem .1rem}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
@@ -446,7 +501,7 @@ footer span,footer b{font-size:1rem}
     <a href="#things">Things I've Made</a>
     <a href="#about">About</a>
   </nav>
-  <a class="contact-pill" href="#contact"><span aria-hidden="true"></span>Contact</a>
+  <a class="contact-pill" href="#contact">Contact</a>
 </header>
 
 <main id="top">
