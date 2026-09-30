@@ -538,6 +538,56 @@ footer span,footer b{font-size:1rem}
  .contact-pill{padding:.6rem .9rem}
 }
 </style>
+<style id="minimal-circle-home">
+.home-mark{
+ width:2.5rem;
+ height:2.5rem;
+ flex-basis:2.5rem;
+ border:.0625rem solid rgba(21,18,36,.72);
+ border-radius:50%;
+ background:transparent;
+ box-shadow:none;
+ backdrop-filter:none;
+}
+.home-mark:hover{
+ transform:none;
+ background:rgba(21,18,36,.06);
+ border-color:#151224;
+ box-shadow:none;
+}
+.home-roof{
+ width:.92rem;
+ height:.92rem;
+ top:.62rem;
+ background:transparent;
+ border-left:.1rem solid #151224;
+ border-top:.1rem solid #151224;
+ border-radius:.04rem;
+}
+.home-body{
+ width:1.08rem;
+ height:.9rem;
+ bottom:.53rem;
+ background:transparent;
+ border:.1rem solid #151224;
+ border-top:0;
+ border-radius:0 0 .1rem .1rem;
+}
+.home-door{
+ width:.3rem;
+ height:.52rem;
+ bottom:0;
+ background:transparent;
+ border-left:.1rem solid #151224;
+ border-right:.1rem solid #151224;
+ border-radius:0;
+}
+@media(max-width:37.5rem){
+ .home-mark{width:2.35rem;height:2.35rem;flex-basis:2.35rem}
+ .home-roof{top:.56rem}
+ .home-body{bottom:.48rem}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
