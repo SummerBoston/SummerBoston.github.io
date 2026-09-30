@@ -282,6 +282,16 @@ footer span,footer b{font-size:1rem}
  .hero-line-detail{margin-top:.55rem}
 }
 </style>
+<style id="shipping-headline-wrap">
+.shipping-line{display:block}
+.shipping-lock{white-space:nowrap}
+@media(max-width:37.5rem){
+ #things .section-title h2{font-size:clamp(2.15rem,10.2vw,3.5rem)}
+}
+@media(max-width:23.75rem){
+ #things .section-title h2{font-size:clamp(1.95rem,9.6vw,2.75rem)}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
@@ -413,7 +423,7 @@ footer span,footer b{font-size:1rem}
 <section id="things" class="things">
   <div class="section-title compact">
     <span>02 / THINGS I'VE MADE</span>
-    <h2>Strategy is good.<br><i>Shipping is better.</i></h2>
+    <h2><span class="shipping-line">Strategy is</span><span class="shipping-line shipping-lock"><span>good.</span> <i>Shipping is better.</i></span></h2>
   </div>
   <div class="made-grid">
     <a class="made-card editorial" href="https://news.bitcoin.com/working-in-the-cryptocurrency-industry-as-a-woman/" target="_blank" rel="noopener">
