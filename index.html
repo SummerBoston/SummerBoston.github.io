@@ -315,6 +315,22 @@ footer span,footer b{font-size:1rem}
  .intro p{font-size:clamp(2rem,9vw,2.75rem);text-wrap:pretty}
 }
 </style>
+<style id="about-heading-spacing">
+.about h2{
+ line-height:1.04;
+ margin-bottom:clamp(3rem,5vw,5rem);
+}
+.about h2 .about-greeting,
+.about h2 .about-statement{display:block}
+.about h2 .about-statement{
+ margin-top:clamp(1rem,1.8vw,1.75rem);
+}
+.about-copy .lead{margin-top:0}
+@media(max-width:37.5rem){
+ .about h2{line-height:1.08;margin-bottom:2.5rem}
+ .about h2 .about-statement{margin-top:1rem}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
@@ -490,10 +506,9 @@ footer span,footer b{font-size:1rem}
 <section id="about" class="about">
   <div class="about-left"><span>03 / ABOUT</span><div class="portrait"><div class="initials">SL</div><div class="portrait-tag">BOSTON → EVERYWHERE</div></div></div>
   <div class="about-copy">
-    <h2>I'm Summer.<br>I like making <i>complex things happen.</i></h2>
+    <h2><span class="about-greeting">Hi, I’m Summer!</span><span class="about-statement">I like making <i>complex things happen.</i></span></h2>
     <p class="lead">I'm a program, partnerships and growth professional with 7+ years of experience across technology, Web3 and community-focused programs.</p>
     <p>My work has taken me from building blockchain ecosystems and supporting a U.S. exchange launch to managing programs designed to bring spending back into local communities. The common thread is simple: align people around an idea, build a plan, and get it into the world.</p>
-    <div class="skills"><span>Program Management</span><span>GTM Strategy</span><span>Partnerships</span><span>Growth</span><span>Stakeholder Management</span><span>Content & Campaigns</span><span>Data Analysis</span></div>
   </div>
 </section>
 
