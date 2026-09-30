@@ -491,6 +491,34 @@ footer span,footer b{font-size:1rem}
  .contact-pill{padding:.5rem .1rem}
 }
 </style>
+<style id="contact-link-balance">
+.contact-links a,
+.contact-links a:first-child{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ min-height:3.25rem;
+ padding:.85rem 1.25rem;
+ border:.0625rem solid rgba(255,255,255,.42);
+ border-radius:999rem;
+ background:transparent;
+ color:#fff;
+ box-shadow:none;
+ font-weight:500;
+ transition:background .2s ease,border-color .2s ease,transform .2s ease;
+}
+.contact-links a:hover,
+.contact-links a:first-child:hover{
+ background:rgba(255,255,255,.1);
+ border-color:rgba(255,255,255,.8);
+ color:#fff;
+ transform:translateY(-.08rem);
+}
+.contact-links a:focus-visible{
+ outline:.125rem solid #fff;
+ outline-offset:.2rem;
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
