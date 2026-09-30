@@ -292,6 +292,29 @@ footer span,footer b{font-size:1rem}
  #things .section-title h2{font-size:clamp(1.75rem,8.8vw,2.4rem)}
 }
 </style>
+<style id="intro-layout-balance">
+.intro{
+ grid-template-columns:minmax(7rem,.45fr) minmax(0,5.55fr);
+ column-gap:clamp(2rem,4vw,5rem);
+ align-items:start;
+ padding-top:clamp(5rem,9vw,9rem);
+ padding-bottom:clamp(5rem,9vw,9rem);
+}
+.intro p{
+ max-width:none;
+ width:100%;
+ font-size:clamp(2.5rem,4.9vw,5rem);
+ text-wrap:balance;
+}
+@media(max-width:56.25rem){
+ .intro{grid-template-columns:1fr;row-gap:2rem}
+ .intro p{font-size:clamp(2.25rem,7vw,4rem)}
+}
+@media(max-width:37.5rem){
+ .intro{row-gap:1.5rem}
+ .intro p{font-size:clamp(2rem,9vw,2.75rem);text-wrap:pretty}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
