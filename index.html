@@ -415,27 +415,6 @@ footer span,footer b{font-size:1rem}
 #contact{scroll-margin-top:clamp(1rem,5vw,4rem)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.contact-pill{transition:none}}
 </style>
-<style id="hero-orb-motion">
-.orb{
- will-change:transform;
- transform-origin:center;
-}
-.orb1{animation:orbFloatOne 11s ease-in-out infinite alternate}
-.orb2{animation:orbFloatTwo 14s ease-in-out infinite alternate}
-@keyframes orbFloatOne{
- 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
- 45%{transform:translate3d(-1.1vw,1.4vh,0) rotate(4deg) scale(1.035)}
- 100%{transform:translate3d(.7vw,-1vh,0) rotate(-3deg) scale(.985)}
-}
-@keyframes orbFloatTwo{
- 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
- 50%{transform:translate3d(-1.4vw,-1.2vh,0) rotate(-5deg) scale(.97)}
- 100%{transform:translate3d(.8vw,1.5vh,0) rotate(4deg) scale(1.04)}
-}
-@media(prefers-reduced-motion:reduce){
- .orb1,.orb2{animation:none}
-}
-</style>
 <style id="minimal-header-balance">
 .home-mark{
  width:2.5rem;
@@ -588,6 +567,57 @@ footer span,footer b{font-size:1rem}
  .home-body{bottom:.48rem}
 }
 </style>
+<style id="hero-orb-motion">
+.orb{will-change:transform;transform-origin:center}
+.orb1{animation:orbFloatOne 17s cubic-bezier(.45,.05,.55,.95) infinite alternate}
+.orb2{animation:orbFloatTwo 21s cubic-bezier(.42,0,.58,1) infinite alternate-reverse}
+.orb3{
+ width:10vw;
+ height:10vw;
+ min-width:5rem;
+ min-height:5rem;
+ right:20vw;
+ top:27vh;
+ background:linear-gradient(135deg,#20cfe3,#596cff 52%,#b452ff)!important;
+ opacity:.9!important;
+ box-shadow:0 1.5rem 4rem rgba(73,102,255,.22);
+ animation:orbFloatThree 13s cubic-bezier(.37,.08,.63,.92) infinite alternate;
+}
+@keyframes orbFloatOne{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 19%{transform:translate3d(-2.2vw,1.1vh,0) rotate(3deg) scale(1.025)}
+ 43%{transform:translate3d(-5.4vw,5.2vh,0) rotate(7deg) scale(.98)}
+ 68%{transform:translate3d(-1.3vw,7.1vh,0) rotate(-4deg) scale(1.045)}
+ 84%{transform:translate3d(2.1vw,3.2vh,0) rotate(-7deg) scale(1.01)}
+ 100%{transform:translate3d(.5vw,-1.4vh,0) rotate(2deg) scale(.985)}
+}
+@keyframes orbFloatTwo{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 23%{transform:translate3d(-4.8vw,-3.1vh,0) rotate(-5deg) scale(.97)}
+ 46%{transform:translate3d(-7.2vw,-7.3vh,0) rotate(4deg) scale(1.035)}
+ 61%{transform:translate3d(-3.6vw,-9vh,0) rotate(8deg) scale(1.01)}
+ 82%{transform:translate3d(1.2vw,-4.4vh,0) rotate(-3deg) scale(.975)}
+ 100%{transform:translate3d(-.8vw,1.6vh,0) rotate(5deg) scale(1.04)}
+}
+@keyframes orbFloatThree{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}
+ 17%{transform:translate3d(3.8vw,2.4vh,0) rotate(8deg) scale(.94)}
+ 39%{transform:translate3d(7.4vw,6.8vh,0) rotate(13deg) scale(1.08)}
+ 57%{transform:translate3d(10.2vw,3.2vh,0) rotate(4deg) scale(1.02)}
+ 76%{transform:translate3d(6.1vw,-3.8vh,0) rotate(-9deg) scale(.96)}
+ 91%{transform:translate3d(2.2vw,-5.5vh,0) rotate(-4deg) scale(1.05)}
+ 100%{transform:translate3d(-1vw,-1vh,0) rotate(3deg) scale(1)}
+}
+@media(max-width:56.25rem){
+ .orb3{width:15vw;height:15vw;right:24vw;top:29vh}
+}
+@media(max-width:37.5rem){
+ .orb3{width:18vw;height:18vw;right:25vw;top:31vh;min-width:4rem;min-height:4rem}
+}
+@media(prefers-reduced-motion:reduce){
+ .orb1,.orb2,.orb3{animation:none}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
@@ -609,7 +639,7 @@ footer span,footer b{font-size:1rem}
     <p><span class="hero-line">Programs. Partnerships.</span><span class="hero-line">Campaigns. Growth.</span><span class="hero-line hero-line-detail">I turn ambitious ideas into work people can actually experience.</span></p>
     <a href="#work" class="down">↓</a>
   </div>
-  <div class="orb orb1"></div><div class="orb orb2"></div>
+  <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
 </section>
 
 <section class="marquee">
