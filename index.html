@@ -382,6 +382,39 @@ footer span,footer b{font-size:1rem}
  .home-body{bottom:.42rem}
 }
 </style>
+<style id="header-contact-cta">
+.contact-pill{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ gap:.5rem;
+ min-height:2.75rem;
+ padding:.7rem 1.15rem;
+ border:0;
+ border-radius:999rem;
+ background:linear-gradient(100deg,#7047ff,#a84dff 55%,#ff4f9a);
+ color:#fff;
+ font-weight:600;
+ line-height:1;
+ box-shadow:0 .45rem 1.15rem rgba(112,71,255,.22);
+ transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+}
+.contact-pill span{
+ width:.5rem;
+ height:.5rem;
+ margin:0;
+ background:#fff;
+ box-shadow:0 0 0 .22rem rgba(255,255,255,.18);
+}
+.contact-pill:hover{
+ transform:translateY(-.1rem);
+ box-shadow:0 .65rem 1.45rem rgba(112,71,255,.3);
+ filter:saturate(1.08);
+}
+.contact-pill:focus-visible{outline:.18rem solid #151224;outline-offset:.2rem}
+#contact{scroll-margin-top:clamp(1rem,5vw,4rem)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.contact-pill{transition:none}}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
@@ -392,7 +425,7 @@ footer span,footer b{font-size:1rem}
     <a href="#things">Things I've Made</a>
     <a href="#about">About</a>
   </nav>
-  <a class="contact-pill" href="mailto:lu.yin@northeastern.edu"><span></span>Let's talk</a>
+  <a class="contact-pill" href="#contact"><span aria-hidden="true"></span>Contact</a>
 </header>
 
 <main id="top">
