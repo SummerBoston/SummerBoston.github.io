@@ -519,6 +519,25 @@ footer span,footer b{font-size:1rem}
  outline-offset:.2rem;
 }
 </style>
+<style id="header-contact-outline">
+.contact-pill{
+ min-height:2.65rem;
+ padding:.65rem 1.05rem;
+ border:.0625rem solid rgba(21,18,36,.72);
+ border-radius:999rem;
+ background:transparent;
+ color:#151224;
+}
+.contact-pill::after{display:none}
+.contact-pill:hover{
+ background:rgba(21,18,36,.06);
+ border-color:#151224;
+ transform:none;
+}
+@media(max-width:37.5rem){
+ .contact-pill{padding:.6rem .9rem}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
