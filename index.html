@@ -190,6 +190,84 @@ footer{gap:1.25rem;align-items:center;flex-wrap:wrap}
  .made-card{padding:1rem}
 }
 </style>
+<style id="visual-hierarchy-repair">
+/* Restore typographic hierarchy after accessibility/responsive normalization */
+body{font-size:1rem;line-height:1.6}
+body *{font-size:inherit}
+.brand{font-size:1.1875rem}.brand span{font-size:1rem}
+.nav nav,.contact-pill{font-size:1rem}
+.eyebrow,.label,.section-title>span,.about-left>span,.channel-copy>span,.contact>span,
+.project-num,.tags span,.stats small,.arrow-link,.metric-note,.made-top,.made-card p,
+.channel-list span,.portrait-tag,.skills span,footer{font-size:1rem;line-height:1.45}
+.marquee{font-size:1rem}
+.hero-foot p{font-size:clamp(1rem,1.3vw,1.35rem)}
+.project-copy p,.about-copy p,.channel-copy p{font-size:clamp(1rem,1.05vw,1.125rem)}
+.about-copy .lead{font-size:clamp(1.2rem,1.55vw,1.5rem)}
+.stats b{font-size:clamp(1.5rem,2vw,1.95rem)}
+.made-card h3{font-size:clamp(1.65rem,2.2vw,2.15rem)}
+/* Mockup text is real text too: keep >=1rem, then give it room */
+.browserbar span,.reward-card small,.reward-card span,.screen-copy small,.floating-card small,
+.node,.web-art small{font-size:1rem}
+.phone strong{font-size:clamp(1.1rem,1.6vw,1.375rem)}
+.reward-card b{font-size:clamp(1.5rem,2vw,1.75rem)}
+.screen-copy h4{font-size:clamp(1.7rem,2.4vw,2.1rem)}
+.floating-card b{font-size:clamp(1.4rem,2vw,1.875rem)}
+.center{font-size:clamp(1.1rem,1.6vw,1.375rem)}
+.kcc-visual p{font-size:clamp(1rem,1.4vw,1.25rem)}
+.star-art span{font-size:clamp(1rem,1.2vw,1.125rem)}
+.web-art button{font-size:1rem}
+.browserbar{min-height:3.25rem;height:auto;flex-wrap:nowrap}
+.open-screen{height:calc(100% - 3.25rem)}
+.phone{width:min(14rem,48%);height:auto;min-height:24rem;padding:2rem 1.15rem}
+.reward-card{padding:1rem}.screen-copy{max-width:45%}
+.floating-card{height:auto;min-height:13rem}
+.c1{width:min(21rem,76%)}.c2{width:min(19rem,72%)}
+.node{white-space:nowrap}
+.made-top{gap:1rem}.made-top span{min-width:0}
+.channel-list a{font-size:1rem}
+footer span,footer b{font-size:1rem}
+/* Editorial display type remains display type, but fluid and contained */
+.editorial-art div{font-size:clamp(7rem,12vw,11.25rem)}
+.star-art{font-size:clamp(8rem,15vw,14.375rem)}
+.faq-art>b{font-size:clamp(7rem,13vw,11.875rem)}
+.initials{font-size:clamp(7rem,13vw,11.25rem)}
+@media(max-width:68.75rem){
+ .project{grid-template-columns:1fr}
+ .project-copy{grid-template-columns:2.625rem minmax(0,1fr)}
+ .visual{min-height:clamp(26rem,55vw,37.5rem)}
+ .phone{width:min(13rem,42%)}
+}
+@media(max-width:56.25rem){
+ .project-copy{grid-template-columns:2rem minmax(0,1fr)}
+ .made-grid,.channels,.about{grid-template-columns:1fr}
+ .screen-copy{display:block}
+}
+@media(max-width:37.5rem){
+ .hero-foot p br{display:none}
+ .project-copy{grid-template-columns:1fr}
+ .project-num{margin-bottom:.25rem}
+ .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:1.25rem}
+ .visual{min-height:23rem}
+ .browser{min-height:21rem}
+ .open-screen{padding:1rem}
+ .phone{width:min(13rem,82%);min-height:19rem;height:auto;padding:1.5rem 1rem}
+ .screen-copy{display:none}
+ .floating-card{min-height:0;padding:1.25rem}
+ .c1{width:80%;left:4%;top:10%}.c2{width:76%;right:4%;bottom:8%}
+ .network-visual .node{font-size:1rem;padding:.55rem .7rem}
+ .n1{left:3%}.n2{right:3%}.n3{right:2%}.n4{left:3%}.n5{left:36%}
+ .made-card{min-height:25rem}
+ .editorial-art small{position:static;transform:none;margin-left:1rem}
+ .channel-list a{align-items:flex-start}
+}
+@media(max-width:23.75rem){
+ .brand{font-size:1rem}.contact-pill{font-size:1rem}
+ .hero h1{font-size:clamp(3.25rem,18vw,4.25rem)}
+ .section-title h2{font-size:clamp(2.4rem,12vw,3.2rem)}
+ .project h3{font-size:clamp(2.25rem,11vw,3rem)}
+ .contact h2{font-size:clamp(3rem,17vw,4.5rem)}
+}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
