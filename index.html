@@ -68,6 +68,32 @@ linear-gradient(135deg,#111127,#25104f 55%,#48136f)!important}
 <style id="responsive-type-fixes">
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{font-size:clamp(16px,1.05vw,18px);line-height:1.55}.hero h1{font-size:clamp(64px,12vw,180px)}.hero-foot p{font-size:clamp(17px,1.5vw,23px)}.intro p{font-size:clamp(36px,5.2vw,74px)}.section-title h2{font-size:clamp(48px,7vw,100px)}.project h3{font-size:clamp(44px,6vw,84px)}.project-copy p,.about-copy p,.channel-copy p{font-size:clamp(16px,1.15vw,18px)}.about-copy .lead{font-size:clamp(20px,1.6vw,24px)}.made-card h3{font-size:clamp(26px,2.2vw,34px)}.made-card p,.channel-list b,.arrow-link,.contact-links a,.contact-pill{font-size:clamp(14px,1vw,16px)}.eyebrow,.label,.section-title>span,.about-left>span,.channel-copy>span,.contact>span,.made-top,.metric-note,.stats small{font-size:clamp(11px,.8vw,13px)}.tags span{font-size:clamp(11px,.72vw,12px)}.nav nav{font-size:clamp(14px,1vw,16px)}.stats b{font-size:clamp(25px,2vw,31px)}.channel-copy h2{font-size:clamp(50px,7vw,92px)}.about h2{font-size:clamp(46px,6vw,82px)}.contact h2{font-size:clamp(64px,11vw,160px)}footer{font-size:clamp(11px,.8vw,13px);line-height:1.5}@media(max-width:900px){body{font-size:16px}.hero h1{font-size:clamp(64px,20vw,150px)}.section-title h2{font-size:clamp(46px,11vw,82px)}.project h3{font-size:clamp(42px,10vw,68px)}}@media(max-width:520px){body{font-size:16px;line-height:1.6}.hero h1{font-size:clamp(58px,19vw,92px);line-height:.88}.hero-foot p{font-size:16px;line-height:1.55}.intro p{font-size:clamp(32px,9vw,44px);line-height:1.12}.section-title h2{font-size:clamp(42px,13vw,64px);line-height:.95}.project h3{font-size:clamp(40px,12vw,56px);line-height:1}.project-copy p,.about-copy p,.channel-copy p{font-size:16px;line-height:1.65}.about-copy .lead{font-size:20px;line-height:1.5}.made-card h3{font-size:28px;line-height:1.1}.made-card p,.channel-list b,.arrow-link,.contact-links a,.contact-pill{font-size:14px}.eyebrow,.label,.section-title>span,.about-left>span,.channel-copy>span,.contact>span,.made-top,.metric-note,.stats small,.tags span{font-size:11px;line-height:1.4}.contact h2{font-size:clamp(56px,18vw,92px);line-height:.9}footer{font-size:11px}}
 </style>
+
+<style id="minimum-font-size-fix">
+/* Accessibility baseline: no rendered text below 1rem */
+html{font-size:16px}
+body,body *{font-size:max(1rem,var(--element-font-size,1rem))}
+/* Preserve intentionally larger responsive typography */
+.hero h1{font-size:clamp(4rem,12vw,11.25rem)}
+.intro p{font-size:clamp(2.25rem,5.2vw,4.625rem)}
+.section-title h2{font-size:clamp(3rem,7vw,6.25rem)}
+.project h3{font-size:clamp(2.75rem,6vw,5.25rem)}
+.stats b{font-size:clamp(1.5625rem,2vw,1.9375rem)}
+.made-card h3{font-size:clamp(1.625rem,2.2vw,2.125rem)}
+.channel-copy h2{font-size:clamp(3.125rem,7vw,5.75rem)}
+.about h2{font-size:clamp(2.875rem,6vw,5.125rem)}
+.about-copy .lead{font-size:clamp(1.25rem,1.6vw,1.5rem)}
+.contact h2{font-size:clamp(4rem,11vw,10rem)}
+.gate-word{font-size:max(1rem,11vw)}
+.huge{font-size:clamp(6.875rem,16vw,15rem)}
+.editorial-art div{font-size:clamp(8.125rem,12vw,11.25rem)}
+.star-art{font-size:clamp(10.625rem,15vw,14.375rem)}
+.faq-art>b{font-size:clamp(8.75rem,13vw,11.875rem)}
+.web-art strong{font-size:clamp(2.8125rem,5vw,3.75rem)}
+.initials{font-size:clamp(7rem,13vw,11.25rem)}
+@media(max-width:900px){.hero h1{font-size:clamp(4rem,20vw,9.375rem)}.section-title h2{font-size:clamp(2.875rem,11vw,5.125rem)}.project h3{font-size:clamp(2.625rem,10vw,4.25rem)}}
+@media(max-width:520px){.hero h1{font-size:clamp(3.625rem,19vw,5.75rem)}.intro p{font-size:clamp(2rem,9vw,2.75rem)}.section-title h2{font-size:clamp(2.625rem,13vw,4rem)}.project h3{font-size:clamp(2.5rem,12vw,3.5rem)}.made-card h3{font-size:1.75rem}.about-copy .lead{font-size:1.25rem}.contact h2{font-size:clamp(3.5rem,18vw,5.75rem)}}
+</style>
 </head>
 <body>
 <div class="cursor-glow"></div>
